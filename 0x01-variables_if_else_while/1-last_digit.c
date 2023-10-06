@@ -7,10 +7,9 @@
  * Return: 0
  */
 
-int main(void)
+
+int random(int n)
 {
-	int random(int n)
-	{
 	int y;
 	
 	if (n!=0)
@@ -32,9 +31,12 @@ int main(void)
 		printf("Last digit of %d is and is less than 6 and not 0\n", n);
 	}
 	return(0);
-	}
+}
+int main(void)
+{
 	random(98);
 	random(-98);
 	random(980);
+	return(0);
 }
 
