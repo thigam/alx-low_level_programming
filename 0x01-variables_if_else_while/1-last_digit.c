@@ -8,7 +8,7 @@
  */
 
 
-int random(int n)
+int some_number(int n)
 {
 	int y;
 	
