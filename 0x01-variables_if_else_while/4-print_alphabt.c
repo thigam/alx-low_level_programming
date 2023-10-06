@@ -13,6 +13,9 @@ int main(void)
 	{
 		if (letter != 'q' || letter != 'e')
 		{
+		}
+		else
+		{
 		putchar(letter);
 		}
 	}
