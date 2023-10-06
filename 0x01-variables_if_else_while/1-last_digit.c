@@ -34,9 +34,9 @@ int some_number(int n)
 }
 int main(void)
 {
-	random(98);
-	random(-98);
-	random(980);
+	some_number(98);
+	some_number(-98);
+	some_number(980);
 	return(0);
 }
 
