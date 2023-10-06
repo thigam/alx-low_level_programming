@@ -9,11 +9,15 @@
 
 int main(void)
 {
-	int n;
+	int random(int n)
+	{
 	int y;
-
+	
+	if (n!=0)
+	{
 	srand(time(0));
 	n=rand() - RAND_MAX / 2;
+	}
 	y = n % 10;
 	if (y > 5)
 	{
@@ -28,5 +32,9 @@ int main(void)
 		printf("Last digit of %d is and is less than 6 and not 0\n", n);
 	}
 	return(0);
+	}
+	random(98);
+	random(-98);
+	random(980);
 }
 
