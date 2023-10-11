@@ -8,10 +8,18 @@
 void print_to_98(int n)
 {
 	int z, ones, tens;
-	ones = n % 10;
-	tens = (n - ones)/10;
-	_putchar(tens + '0');
-	_putchar(ones + '0');
+
+	if(n>9)
+	{
+		ones = n % 10;
+		tens = (n - ones)/10;
+		_putchar(tens + '0');
+		_putchar(ones + '0');	
+	}
+	else
+	{
+		_putchar(n + '0');
+	}
 
 	for(z = n+1; z<=98; z++)
 	{
