@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "_putchar.c"
+#include "main.h"
 
 /**
  * main- Prints "_putchar"
@@ -10,7 +9,8 @@ int main(void)
 {
 	int counter;
 	char str[]="_putchar";
-	for(counter=0, counter<=len(_putchar), ++counter)
+
+	for (counter = 0, counter <= len(_putchar), ++counter)
 	{
 		_putchar(str[counter];
 	}
