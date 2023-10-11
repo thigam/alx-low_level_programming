@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 
 /**
  * main- Print alphabet in lowercase ten times
@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
         char z;
 	int i;
 
-	for(i=1; 1<=10; i++)
+	for(i=1; i<=10; i++)
 	{
 		 for(z='a'; z<='z'; z++)
         	{
