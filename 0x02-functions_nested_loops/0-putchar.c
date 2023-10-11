@@ -10,9 +10,8 @@ int main(void)
 	int counter;
 	char str[]="_putchar";
 
-	for (counter = 0, counter <= len(_putchar), ++counter)
+	for (counter = 0; counter <= 7; counter++)
 	{
-		_putchar(str[counter];
+		_putchar(str[counter]);
 	}
-	Return 0;
 }
