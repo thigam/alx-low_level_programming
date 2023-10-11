@@ -14,4 +14,5 @@ int main(void)
 	{
 		_putchar(str[counter]);
 	}
+	return 0;
 }
