@@ -8,15 +8,16 @@
 void times_table(void)
 {
 	int n, m, x, y, z;
-	for(n=0; n<=9; n++)
+
+	for (n = 0; n <= 9; n++)
 	{
-		for(m=0; m<=9; m++)
+		for (m = 0; m <= 9; m++)
 		{
-			x=m*n;
-			if(x>9)
+			x = m * n;
+			if (x > 9)
 			{
-				y=x%10;
-				z=(x-y)/10;
+				y = x % 10;
+				z = (x - y) / 10;
 
 				_putchar(44);
 				_putchar(32);
@@ -25,7 +26,7 @@ void times_table(void)
 			}
 			else
 			{
-				if(y!=0)
+				if (m != 0)
 				{
 					_putchar(44);
 					_putchar(32);
