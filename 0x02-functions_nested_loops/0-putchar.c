@@ -8,11 +8,12 @@
 int main(void)
 {
 	int counter;
-	char str[]="_putchar";
+	char str[] = "_putchar";
 
 	for (counter = 0; counter <= 7; counter++)
 	{
 		_putchar(str[counter]);
 	}
-	return 0;
+	_putchar('\n');
+	return (0);
 }
