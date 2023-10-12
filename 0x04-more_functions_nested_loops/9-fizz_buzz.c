@@ -1,3 +1,8 @@
+/*
+ * File: 9-fizz_buzz.c
+ * Auth: Matthew T Mwangi
+ */
+
 #include <stdio.h>
 
 /**
@@ -32,6 +37,7 @@ int main(void)
 			printf(" ");
 		}
 	}
+
 	printf("\n");
 
 	return (0);
