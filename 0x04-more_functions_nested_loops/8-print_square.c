@@ -1,9 +1,13 @@
+/*
+ * File: 8-print_square.c
+ * Auth: Matthew T Mwangi
+ */
+
 #include "main.h"
 
 /**
  * print_sqaure- Prints a square
  * @size: Defines the size of the square
- * Return: void
  */
 
 void print_square(int size)
