@@ -1,8 +1,3 @@
-/**
- * File: 5-more_numbers.c
- * Auth: Matthew T Mwangi
- */
-
 #include "main.h"
 
 /**
