@@ -1,3 +1,8 @@
+/*
+ * File: 1-isdigit.c
+ * Auth: Matthew T Mwangi
+ */
+
 #include "main.h"
 
 /**
