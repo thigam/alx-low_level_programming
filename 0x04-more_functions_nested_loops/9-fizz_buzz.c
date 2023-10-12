@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz- Prints numbers from 0 to 100, substituting fizz for multiples of 3, buzz for multiples of 5 and FizzBuzz for multiples of three and five
- * Return: void
+ * main- Prints numbers from 0 to 100, substituting fizz for multiples of 3, buzz for multiples of 5 and FizzBuzz for multiples of three and five
+ * Return: 0
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int counter;
 
@@ -33,4 +33,5 @@ void fizz_buzz(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
