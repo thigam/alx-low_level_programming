@@ -3,7 +3,7 @@
  * Auth: Matthew T Mwangi
  */
 
-#include " main.h"
+#include "main.h"
 
 /**
  * print_line- Prints a straight line
