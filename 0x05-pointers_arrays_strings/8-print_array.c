@@ -7,13 +7,13 @@
  * Return: nothing
  */
 
-void print_array(int *n, int n)
+void print_array(int *a, int n)
 {
 	int rep_count;
 
 	for (rep_count = 0; rep_count <= n; rep_count++)
 	{
-		_putchar(n[rep_count] + '0');
+		_putchar(a[rep_count] + '0');
 		if (rep_count != n)
 		{
 			_putchar(44);
