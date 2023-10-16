@@ -16,9 +16,11 @@ void print_array(int *a, int n)
 		printf("%d", a[rep_count]);
 		if (rep_count != n)
 		{
-			_putchar(44);
-			_putchar(32);
+			printf("%d, ", a[rep_count]);
 		}
+		else
+		{
+			printf("%d", a[rep_count]);
 	}
-	_putchar('\n');
+	printf("\n");
 }
