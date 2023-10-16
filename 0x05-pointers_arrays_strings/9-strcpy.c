@@ -21,5 +21,5 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[rep_counter] = src[rep_counter];
 	}
-	return (&dest);
+	return (dest);
 }
