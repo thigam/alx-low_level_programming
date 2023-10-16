@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int counter, max_count;
-	char holder[10] = *s;
+	char holder[10] = s;
 
 	counter = 0;
 
