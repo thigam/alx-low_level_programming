@@ -13,7 +13,6 @@ void print_array(int *a, int n)
 
 	for (rep_count = 0; rep_count <= n; rep_count++)
 	{
-		printf("%d", a[rep_count]);
 		if (rep_count != n)
 		{
 			printf("%d, ", a[rep_count]);
