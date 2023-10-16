@@ -29,6 +29,6 @@ void puts_half(char *str)
 
 	for (rep_count = n - 1; rep_count >= 0; rep_count--)
 	{
-		_putchar(str[len_count - rep_count + 1]);
+		_putchar(str[len_count - rep_count - 1]);
 	}
 }
