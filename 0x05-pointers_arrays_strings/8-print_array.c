@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 {
 	int rep_count;
 
-	for (rep_count = 0; rep_count <= n; rep_count++)
+	for (rep_count = 0; rep_count < n; rep_count++)
 	{
 		if (rep_count != n)
 		{
