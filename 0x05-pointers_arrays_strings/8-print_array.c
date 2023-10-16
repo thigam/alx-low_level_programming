@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 
 	for (rep_count = 0; rep_count <= n; rep_count++)
 	{
-		_putchar(a[rep_count] + '0');
+		printf("%d", a[rep_count]);
 		if (rep_count != n)
 		{
 			_putchar(44);
