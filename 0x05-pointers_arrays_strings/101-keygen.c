@@ -20,11 +20,11 @@ int main(void)
 	for (x = 0; x < 100; x++)
 	{
 		password[x] = rand() % 78;
-		sum = sum + (passowrd[x] + '0');
+		sum = sum + (password[x] + '0');
 		putchar(password[x] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
-			n = 2772 - sum - '0';
+			y = 2772 - sum - '0';
 			sum = sum + y;
 			putchar(y + '0');
 			break;
