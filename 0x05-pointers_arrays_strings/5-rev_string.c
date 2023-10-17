@@ -11,11 +11,11 @@ void rev_string(char *s)
 	int rep_count, len_count, changing_len;
 	char holder;
 
-	counter = 0;
+	len_count = 0;
 
 	while (*(s + len_count) != '\0')
 	{
-		len_counter++;
+		len_count++;
 	}
 
 	changing_len = len_count - 1;
