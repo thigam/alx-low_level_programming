@@ -25,4 +25,5 @@ void puts2(char *str)
 		}
 		_putchar(str[rep_count]);
 	}
+	_putchar('\n');
 }
