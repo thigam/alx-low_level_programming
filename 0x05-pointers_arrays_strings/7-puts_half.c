@@ -16,19 +16,20 @@ void puts_half(char *str)
 	{
 		len_count++;
 	}
-	len_count--;
 
 	if (len_count % 2 == 0)
 	{
-		n = len_count / 2;
+		for (rep_count = len_count / 2; str[rep_count] != '0'; rep_count++)
+		{
+			_putchar(str[rep_count]);
+		}
 	}
 	else if (len_count % 2 == 1)
 	{
-		n = (len_count - 1) / 2;
+		for (rep_count = (len_count - 1) / 2; rep_count < len_count - 1; rep_count++)
+		{
+			_putchar(str[rep_count + 1]);
+		}
 	}
-
-	for (rep_count = n - 1; rep_count >= 0; rep_count--)
-	{
-		_putchar(str[len_count - rep_count - 1]);
-	}
+	_putchar('\n');
 }
