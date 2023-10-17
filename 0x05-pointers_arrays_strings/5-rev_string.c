@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int counter, max_count;
-	char holder[10] = s;
+	char holder[];
 
 	counter = 0;
 
@@ -20,7 +20,11 @@ void rev_string(char *s)
 
 	max_count = counter;
 
-	for (counter = counter; counter >= 0; counter--)
+	for (counter = 0; counter < max_count; counter++)
+	{
+		holder[counter] = s[counter];
+	}
+	for (counter = max_count - 1; counter >= 0; counter--)
 	{
 		*(s + counter) = holder[max_count - counter];
 	}
