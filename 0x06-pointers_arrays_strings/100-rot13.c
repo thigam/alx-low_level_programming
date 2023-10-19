@@ -15,20 +15,20 @@ char *rot13(char *strn)
 {
 	int counter;
 
-	for (counter = 0; strn[counter] != '\0' && strn[counter] >= 'a' && strn[counter] <= 'z')
+	for (counter = 0; strn[counter] != '\0' && strn[counter] >= 'a' && strn[counter] <= 'z'; counter++)
 	{
 		if (strn[counter] <= 109)
 		{
 			strn[counter] += 13;
 		}
-		else if (strn[counter] >= 110;)
+		else if (strn[counter] >= 110)
 		{
 			strn[counter] -= 13;
 		}
 	}
-	for (counter = 0; strn[counter] != '\0' && strn[counter] >= 'A' && strn[counter] <= 'Z')
+	for (counter = 0; strn[counter] != '\0' && strn[counter] >= 'A' && strn[counter] <= 'Z'; counter++)
 	{
-		if (strn[counter] <== 77)
+		if (strn[counter] <= 77)
 		{
 			strn[counter] += 13;
 		}
