@@ -15,7 +15,7 @@ void print_number(int n)
 {
 	int counter, holder, digits, output;
 
-	digtis = 1;
+	digits = 1;
 	holder = n;
 
 	if (n < 0)
@@ -30,7 +30,7 @@ void print_number(int n)
 		digits++;
 	}
 
-	for (counter = digits - 1; counter >= 0; counter__)
+	for (counter = digits - 1; counter >= 0; counter--)
 	{
 		if ( n == 0)
 		{
