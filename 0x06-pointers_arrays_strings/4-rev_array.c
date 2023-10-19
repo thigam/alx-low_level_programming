@@ -13,14 +13,8 @@
 
 void reverse_array(int *a, int n)
 {
-	int holder, len, counter;
+	int holder, counter;
 
-	len = 0;
-
-	while (a[len] != '\0')
-	{
-		len++;
-	}
 	for (counter = 0; counter <= n/2; counter++)
 	{
 		holder = a[n - 1 - counter];
