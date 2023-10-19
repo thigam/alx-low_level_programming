@@ -14,7 +14,7 @@
 char *leet(char *strn)
 {
 	int counter, table_index;
-	char table[5] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	char table[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	for (counter = 0; strn[counter] != '\0'; counter++)
 	{
