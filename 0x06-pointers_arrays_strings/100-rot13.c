@@ -37,5 +37,5 @@ char *rot13(char *strn)
 			strn[counter] -= 13;
 		}
 	}
-	return (strn)
+	return (strn);
 }
