@@ -25,7 +25,7 @@ int is_prime_number(int n)
 		return (1);
 	}
 
-	return(divider(n, y));
+	return (divider(n, y));
 }
 
 /**
