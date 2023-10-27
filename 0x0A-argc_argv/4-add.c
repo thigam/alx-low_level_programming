@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int counter_n, counter_d, sum = 0;
 
-	for (counter_n = 0; counter_d < argc; counter_d++)
+	for (counter_n = 0; counter_n < argc; counter_n++)
 	{
 		for (counter_d = 0; argv[counter_n][counter_d]; counter_d)
 		{
