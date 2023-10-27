@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	int num = argv[1], num2 = argv[2], times;
+	int num = atoi(argv[1]), num2 = atoi(argv[2]), times;
 
 	times = num * num2;
 
