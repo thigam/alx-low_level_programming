@@ -13,11 +13,15 @@
 
 int main(int argc, char *argv[])
 {
+	int num = argv[1], num2 = argv[2], times;
+
+	times = num * num2;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", agrv[1] * argv[2]);
+	printf("%d\n", times);
 	return (0);
 }
