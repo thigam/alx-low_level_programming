@@ -63,6 +63,6 @@ int main(int argc, char *argv[])
 	}
 	money += 1;
 	coins--;
-	prinntf("%d\n", coins);
+	printf("%d\n", coins);
 	return (0);
 }
