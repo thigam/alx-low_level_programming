@@ -21,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 		len++;
 	}
 
-	for (counter_s2; s2[counter_s2]; counter_s2++)
+	for (counter_s2 = 0; s2[counter_s2]; counter_s2++)
 	{
 		len++;
 	}
