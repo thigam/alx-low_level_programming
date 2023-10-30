@@ -16,6 +16,11 @@ char *str_concat(char *s1, char *s2)
 	char *concat_str;
 	int counter_s1, counter_s2, len = 0;
 
+	if (s1 == NULL)
+		s1[0] = '\0';
+	if (s2 == NULL)
+		s1[0] = '\0';
+
 	for (counter_s1 = 0; s1[counter_s1]; counter_s1++)
 	{
 		len++;
