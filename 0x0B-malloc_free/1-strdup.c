@@ -15,14 +15,29 @@
 char *_strdup(char *str)
 {
 	char *new_string;
+	int counter, len;
+
+	len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	new_string = malloc(len(*str));
+	for (counter = 0; str[counter]; counter++)
+	{
+		len++;
+	}
+
+	new_string = malloc(sizeof(char) * (len + 1));
 
 	if (new_string == NULL)
 		return (NULL);
+
+	for (counter = 0; str[counter]; counter++)
+	{
+		new_string[counter] = str[counter];
+	}
+
+	new_string[counter] = '\0';
 
 	return (new_string);
 }
