@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * argtostr- Concatenates all the arguments in the
+ * argstostr- Concatenates all the arguments in the
  * program
  *
  * @ac: Number of arguments
@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 
 	for (arg_counter = 0; arg_counter < ac; arg_counter++)
 	{
-		for(l_counter = 0; av[arg_counter][l_counter]; l_counter++)
+		for (l_counter = 0; av[arg_counter][l_counter]; l_counter++)
 		{
 			size_counter++;
 		}
