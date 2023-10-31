@@ -13,7 +13,7 @@
  * ac == 0 or av == NULL
  */
 
-char *argtostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	int arg_counter, l_counter, size_counter, index_counter = 0;
 	char *st;
