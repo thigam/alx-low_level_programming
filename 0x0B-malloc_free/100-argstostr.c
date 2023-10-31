@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 			st[index_counter++] = av[arg_counter][l_counter];
 		}
 
-		st[index_counter] = '\n';
+		st[index_counter++] = '\n';
 	}
 
 	st[size_counter] = '\0';
