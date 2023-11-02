@@ -13,7 +13,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *space;
-	char *occupy;
 	unsigned int counter;
 
 	if (nmemb == 0 || size == 0)
@@ -26,13 +25,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (space == NULL)
 	{
 		return (NULL);
-	}
-
-	occupy = space;
-
-	for (counter = 0; counter < (size * nmemb); counter++)
-	{
-		occupy[counter] = '\0';
 	}
 
 	return (space);
