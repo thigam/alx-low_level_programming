@@ -19,11 +19,11 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	len = max - min +1;
+	len = max - min + 1;
 
 	new_array = malloc(sizeof(int) * len);
 
-	if (new _array == NULL)
+	if (new_array == NULL)
 	{
 		return (NULL);
 	}
