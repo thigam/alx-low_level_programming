@@ -13,7 +13,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *space;
-	unsigned int counter;
 
 	if (nmemb == 0 || size == 0)
 	{
