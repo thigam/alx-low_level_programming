@@ -50,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	doggy->name = copier(doggy->name, name);
 	doggy->age = age;
-	doggy->owner = copier(dogyy->owner, owner);
+	doggy->owner = copier(doggy->owner, owner);
 
 	return (doggy);
 }
@@ -63,7 +63,7 @@ dog_t *new_dog(char *name, float age, char *owner)
  * Return: The length of the string
  */
 
-int _len(*word)
+int _len(char *word)
 {
 	int length;
 
