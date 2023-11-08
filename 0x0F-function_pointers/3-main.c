@@ -31,13 +31,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*op == "/" && numb2 == 0) ||
-			(*op == "%" && numb2 == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
+	
 	printf("%d\n", get_op_func(op)(numb1, numb2));
 
 	return (0);
