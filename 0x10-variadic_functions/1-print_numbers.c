@@ -26,5 +26,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (counter != n)
 			printf("%s", separator);
 	}
+	va_end(number);
 	printf("\n");
 }

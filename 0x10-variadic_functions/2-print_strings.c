@@ -25,6 +25,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (counter != n)
 			printf("%s", separator);
 	}
+	
+	va_end(words);
 	printf("\n");
 	return;
 }
