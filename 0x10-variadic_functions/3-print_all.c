@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 	{
 		func_index = 0;
 
-		while (func_index < 4 && format[format_index] != operations[func_index].symb)
+		while (func_index < 4 && format[format_index] != *(operations[func_index].symb))
 			func_index++;
 
 		if (func_index < 4)
