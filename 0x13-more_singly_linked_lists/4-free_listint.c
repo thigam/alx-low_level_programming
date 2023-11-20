@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void free_listint(listint *head)
+void free_listint(listint_t *head)
 {
 	free(head);
 }
