@@ -9,7 +9,7 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *holder;
+	const listint_t *holder;
 	size_t counter;
 
 	holder = head;
