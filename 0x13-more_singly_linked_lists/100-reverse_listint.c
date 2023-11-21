@@ -7,6 +7,9 @@
  * Return: a pointer to the first node of the reveresed list, NULL if failed
  */
 
+listint_t *reverse_listint(listint_t **head);
+void _changer(listint_t *previous, listint_t *current);
+
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *current;
