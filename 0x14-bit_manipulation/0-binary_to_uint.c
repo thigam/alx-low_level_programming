@@ -8,6 +8,9 @@
  * or b is NULL
  */
 
+unsigned int power(int a, int b);
+unsigned int binary_to_uint(const char *b);
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int numb;
