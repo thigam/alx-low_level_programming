@@ -27,7 +27,7 @@ void print_binary(unsigned long int n)
 		}
 	}
 	reverser(holder);
-	printf("%s\n", holder);
+	printf("%s", holder);
 }
 
 void _adder(char *holder, char c)
