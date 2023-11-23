@@ -8,9 +8,6 @@
  * or b is NULL
  */
 
-unsigned int power(int a, int b);
-unsigned int binary_to_uint(const char *b);
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int numb;
@@ -26,21 +23,33 @@ unsigned int binary_to_uint(const char *b)
 	while (b[counter])
 	{
 		position++;
+		counter++;
 	}
+
+	counter = 0;
 
 	while (b[counter])
 	{
 		if (b[counter] == '0')
 			numb = numb + 0;
 		else if (b[counter] == '1')
-			numb = numb + power(2, position);
+			numb = numb + power(2, position - 1);
 		else
 			return (0);
 		position--;
+		counter++;
 	}
 
 	return (numb);
 }
+
+/**
+ * power- raises a number to a certain power
+ * @a: the number
+ * @b: the power
+ *
+ * Return: the number raised to the power
+ */
 
 unsigned int power(int a, int b)
 {
