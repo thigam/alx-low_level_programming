@@ -30,6 +30,14 @@ void print_binary(unsigned long int n)
 	printf("%s", holder);
 }
 
+/**
+ * _adder- Adds binary digits to a list
+ * @holder: the list
+ * @c: the character
+ *
+ * Return: nothing
+ */
+
 void _adder(char *holder, char c)
 {
 	int counter = 0;
@@ -39,6 +47,13 @@ void _adder(char *holder, char c)
 
 	holder[counter] = c;
 }
+
+/**
+ * reverser- Reverses order of digits
+ * @holder: the list of digits
+ *
+ * Return: nothing
+ */
 
 void reverser(char *holder)
 {
