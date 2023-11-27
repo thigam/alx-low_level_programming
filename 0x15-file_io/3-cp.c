@@ -14,7 +14,7 @@
 int main(int ac, char **av)
 {
 	int numb, fd_from, fd_to, close_ret_1, close_ret_2;
-	ssize_t number;
+	ssize_t number, write_return;
 	char buff[1024];
 
 	if (ac != 3)
@@ -33,9 +33,9 @@ int main(int ac, char **av)
 
 	fd_to = open(av[2], O_RDWR | O_CREAT | O_TRUNC | S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
-	while (number += read(fd_from, buff, 1024))
+	while ((number = read(fd_from, buff, 1024)) > 0)
 	{
-		write_return = write(fd_to, buff, 1024);
+		write_return = write(fd_to, buff, number);
 		if (write_return == -1)
 		{
 			close(fd_from);
@@ -43,6 +43,14 @@ int main(int ac, char **av)
 			dprintf (2, "can't write to %s\n", av[2]);
 			exit (99);
 		}
+	}
+
+	if (number == -1)
+	{
+		close(fd_from);
+		close(fd_to);
+		dprintf(2, "Error: Can't read from file %s\n", av[1]);
+		exite (98);
 	}
 
 	close_ret_1 = close(fd_from);
