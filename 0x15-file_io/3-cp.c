@@ -31,9 +31,16 @@ int main(int ac, char **av)
 		exit (98);
 	}
 
-	fd_to = open(av[2], O_RDWR | O_CREAT | O_TRUNC | S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
-	while ((number = read(fd_from, buff, 1024)) > 0)
+	if (fd_to == -1)
+	{
+		close(fd_from);
+		dprintf(2, "Error: Can't write to file %s\n", av[2]);
+		exit (99);
+	}
+
+	while ((number = read(fd_from, buff, sizeof(buff))) > 0)
 	{
 		write_return = write(fd_to, buff, number);
 		if (write_return == -1)
