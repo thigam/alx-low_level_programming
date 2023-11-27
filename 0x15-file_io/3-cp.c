@@ -13,7 +13,7 @@
 
 int main(int ac, char **av)
 {
-	int numb, fd_from, fd_to, close_ret_1, close_ret_2;
+	int fd_from, fd_to, close_ret_1, close_ret_2;
 	ssize_t number, write_return;
 	char buff[1024];
 
@@ -50,7 +50,7 @@ int main(int ac, char **av)
 		close(fd_from);
 		close(fd_to);
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
-		exite (98);
+		exit (98);
 	}
 
 	close_ret_1 = close(fd_from);
