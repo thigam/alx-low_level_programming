@@ -29,7 +29,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	write_return = write(fd, text_contet, sizeof(text_content)/sizeof(char *));
+	write_return = write(fd, text_content, sizeof(text_content)/sizeof(char *));
 
 	if (write_return == -1)
 	{
