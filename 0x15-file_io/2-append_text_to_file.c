@@ -3,7 +3,7 @@
 /**
  * append_text_to_file- Appends text at the end of a file
  * @filename: the file
- * @text_contet: the text
+ * @text_content: the text
  *
  * Return: 1 on success, -1 on failure
  */
@@ -29,7 +29,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	write_return = write(fd, text_content, sizeof(text_content)/sizeof(char *));
+	write_return = write(fd, text_content, sizeof(text_content) / sizeof(char *));
 
 	if (write_return == -1)
 	{

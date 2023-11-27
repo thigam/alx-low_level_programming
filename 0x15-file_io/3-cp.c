@@ -28,16 +28,17 @@ int main(int ac, char **av)
 	if (fd_from == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
-		exit (98);
+		exit(98);
 	}
 
-	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | 
+			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
 	if (fd_to == -1)
 	{
 		close(fd_from);
 		dprintf(2, "Error: Can't write to file %s\n", av[2]);
-		exit (99);
+		exit(99);
 	}
 
 	while ((number = read(fd_from, buff, sizeof(buff))) > 0)
@@ -47,8 +48,8 @@ int main(int ac, char **av)
 		{
 			close(fd_from);
 			close(fd_to);
-			dprintf (2, "can't write to %s\n", av[2]);
-			exit (99);
+			dprintf(2, "can't write to %s\n", av[2]);
+			exit(99);
 		}
 	}
 
