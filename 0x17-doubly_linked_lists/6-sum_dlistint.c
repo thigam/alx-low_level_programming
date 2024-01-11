@@ -13,7 +13,7 @@ int sum_dlistint(dlistint_t *head)
 	int sum;
 
 	if (head == NULL)
-		return 0;
+		return (0);
 
 	holder = head;
 	sum = 0;
@@ -24,5 +24,5 @@ int sum_dlistint(dlistint_t *head)
 		holder = holder->next;
 	}
 
-	return sum;
+	return (sum);
 }
